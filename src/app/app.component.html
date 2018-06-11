@@ -1,0 +1,41 @@
+<div style="display: flex; align-items: center; justify-content: stretch; border: 1px solid #ccc; padding: 1em;">
+  <button [popover]="myPopover1" style="flex-grow: 1">1</button>
+  <button [popover]="myPopover2" style="flex-grow: 2">2</button>
+  <button [popover]="myPopover3" style="flex-grow: 6">3</button>
+</div>
+
+
+<div class="container">
+  <cc-popover #myPopover1
+    placement="auto"
+    title="this header can be omitted"
+    [closeOnClickOutside]="true">
+    <b>Very</b> <span style="color: #C21F39">Dynamic</span> <span style="color: #00b3ee">Reusable</span>
+    <b><i><span style="color: #ffc520">Popover With</span></i></b> <small>Html support</small>.
+    Click outside of this popover and it will be dismissed automatically.
+    <div style="display: flex; align-items: center; justify-content: center;" >
+      <button (click)="myPopover1.hide()">close</button>
+    </div>
+  </cc-popover>
+</div>
+<div class="container">
+  <cc-popover #myPopover2
+    title="this header can be omitted"
+    [closeOnClickOutside]="true">
+    <b>Very</b> <span style="color: #C21F39">Dynamic</span> <span style="color: #00b3ee">Reusable</span>
+    <b><i><span style="color: #ffc520">Popover With</span></i></b> <small>Html support</small>.
+    Click outside of this popover and it will be dismissed automatically.
+    <div style="display: flex; align-items: center; justify-content: center;" >
+      <button (click)="myPopover2.hide()">close</button>
+    </div>
+  </cc-popover>
+</div>
+<div class="container">
+  <cc-popover #myPopover3
+    title="this header can be omitted"
+    [closeOnClickOutside]="true">
+    <b>Very</b> <span style="color: #C21F39">Dynamic</span> <span style="color: #00b3ee">Reusable</span>
+    <b><i><span style="color: #ffc520">Popover With</span></i></b> <small>Html support</small>.
+    Click outside of this popover and it will be dismissed automatically.
+  </cc-popover>
+</div>
